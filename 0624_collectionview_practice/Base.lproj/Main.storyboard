@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="r6l-ij-tQp">
             <objects>
-                <viewController id="Blh-Qa-gaQ" sceneMemberID="viewController">
+                <viewController id="Blh-Qa-gaQ" customClass="MainVC" customModule="_624_collectionview_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F7Z-Ue-7BR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,13 +87,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="103"/>
+            <point key="canvasLocation" x="90" y="-158"/>
         </scene>
-        <!--View Controller-->
+        <!--My CollectionVC-->
         <scene sceneID="Bbd-hC-4It">
             <objects>
-                <viewController id="XEL-DV-PIP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="G7T-Ye-V1U">
+                <viewController id="XEL-DV-PIP" customClass="MyCollectionVC" customModule="_624_collectionview_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G7T-Ye-V1U" customClass="MyTableViewCell" customModule="_624_collectionview_practice" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="DHq-5X-dOc"/>
@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggY-le-d6w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="751"/>
+            <point key="canvasLocation" x="90" y="531"/>
         </scene>
     </scenes>
     <resources>
