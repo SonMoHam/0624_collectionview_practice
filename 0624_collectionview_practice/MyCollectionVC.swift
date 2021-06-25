@@ -32,6 +32,120 @@ class MyCollectionVC: UIViewController {
         let myCustomCollectionViewCellNib = UINib(nibName: String(describing: MyCustomCollectionViewCell.self), bundle: nil)
         
         self.myCollectionView.register(myCustomCollectionViewCellNib, forCellWithReuseIdentifier: String(describing: MyCustomCollectionViewCell.self))
+        
+        // 콜렉션뷰 콜렉션뷰 레이아웃 설정
+        self.myCollectionView.collectionViewLayout = createCompositionalLayoutForFirst()
+        
+    }
+    @IBAction func onCollectionViewTypeChanged(_ sender: UISegmentedControl) {
+        print("\(type(of: self)) - \(#function) called / sender.selectedSegmentIndex:  \(sender.selectedSegmentIndex)")
+        
+        switch sender.selectedSegmentIndex {
+        case 0:
+            self.myCollectionView.collectionViewLayout = createCompositionalLayoutForFirst()
+        case 1:
+            self.myCollectionView.collectionViewLayout = createCompositionalLayoutForSecond()
+        case 2:
+            self.myCollectionView.collectionViewLayout = createCompositionalLayoutForThird()
+        default:
+            self.myCollectionView.collectionViewLayout = createCompositionalLayoutForFirst()
+        }
+    }
+}
+
+//MARK: - 콜렉션뷰 컴포지셔널 레이아웃 설정
+extension MyCollectionVC {
+    fileprivate func createCompositionalLayoutForFirst() -> UICollectionViewLayout {
+        // 레이아웃 생성
+        let layout = UICollectionViewCompositionalLayout{
+            (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
+            
+            // 아이템 사이즈
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+            
+            // 아이템 생성
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            
+            // 아이템 간 간격
+            item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+            
+            // 그룹 사이즈
+            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1/2))
+            
+            // 그룹 생성
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 1)
+            
+            // 그룹으로 섹션 생성
+            let section = NSCollectionLayoutSection(group: group)
+            
+            // 섹션 간격
+            section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
+            
+            return section
+        }
+        return layout
+    }
+    
+    fileprivate func createCompositionalLayoutForSecond() -> UICollectionViewLayout {
+        // 레이아웃 생성
+        let layout = UICollectionViewCompositionalLayout{
+            (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
+            
+            // 아이템 사이즈
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+            
+            // 아이템 생성
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            
+            // 아이템 간 간격
+            item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+            
+            // 그룹 사이즈
+            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1/2))
+            
+            // 그룹 생성
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 2)
+            
+            // 그룹으로 섹션 생성
+            let section = NSCollectionLayoutSection(group: group)
+            
+            // 섹션 간격
+            section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
+            
+            return section
+        }
+        return layout
+    }
+    
+    fileprivate func createCompositionalLayoutForThird() -> UICollectionViewLayout {
+        // 레이아웃 생성
+        let layout = UICollectionViewCompositionalLayout{
+            (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
+            
+            // 아이템 사이즈
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+            
+            // 아이템 생성
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            
+            // 아이템 간 간격
+            item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+            
+            // 그룹 사이즈
+            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1/3))
+            
+            // 그룹 생성
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 3)
+            
+            // 그룹으로 섹션 생성
+            let section = NSCollectionLayoutSection(group: group)
+            
+            // 섹션 간격
+            section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
+            
+            return section
+        }
+        return layout
     }
 }
 

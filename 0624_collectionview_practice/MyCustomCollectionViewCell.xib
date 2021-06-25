@@ -24,7 +24,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrJ-Ll-jsS">
-                        <rect key="frame" x="20" y="56" width="123" height="31"/>
+                        <rect key="frame" x="61" y="56" width="41.5" height="31"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -33,7 +33,7 @@
                 <constraints>
                     <constraint firstItem="OrJ-Ll-jsS" firstAttribute="centerX" secondItem="mVc-Y3-0Zf" secondAttribute="centerX" id="7pH-w4-oj0"/>
                     <constraint firstItem="F6G-pt-eDf" firstAttribute="top" secondItem="mVc-Y3-0Zf" secondAttribute="top" constant="8" id="IBl-Ug-PyR"/>
-                    <constraint firstItem="OrJ-Ll-jsS" firstAttribute="leading" secondItem="mVc-Y3-0Zf" secondAttribute="leading" constant="20" id="IHz-2P-bYn"/>
+                    <constraint firstItem="OrJ-Ll-jsS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mVc-Y3-0Zf" secondAttribute="leading" constant="20" id="IHz-2P-bYn"/>
                     <constraint firstAttribute="bottom" secondItem="OrJ-Ll-jsS" secondAttribute="bottom" constant="8" id="RYg-es-EJ6"/>
                     <constraint firstItem="OrJ-Ll-jsS" firstAttribute="top" secondItem="F6G-pt-eDf" secondAttribute="bottom" constant="8" id="XSb-Dt-EAO"/>
                     <constraint firstItem="F6G-pt-eDf" firstAttribute="centerX" secondItem="mVc-Y3-0Zf" secondAttribute="centerX" id="uRX-5q-vWI"/>
