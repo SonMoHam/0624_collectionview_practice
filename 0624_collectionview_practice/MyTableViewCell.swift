@@ -18,6 +18,6 @@ class MyTableViewCell: UITableViewCell {
         
         print("\(type(of: self)) - \(#function) called")
         
-        userProfileImg.layer.cornerRadius = userProfileImg.frame.width / 2
+        userProfileImg?.layer.cornerRadius = userProfileImg.frame.width / 2
     }
 }

@@ -48,11 +48,11 @@ class MyTableVC: UIViewController {
     
 }
 
-extension ViewController: UITableViewDelegate {
+extension MyTableVC: UITableViewDelegate {
     
 }
 
-extension ViewController: UITableViewDataSource{
+extension MyTableVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contentArray.count
     }
