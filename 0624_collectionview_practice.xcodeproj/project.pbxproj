@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		121A92652685B261001DB097 /* MyCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121A92642685B261001DB097 /* MyCollectionVC.swift */; };
+		121A92682685B36F001DB097 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121A92672685B36F001DB097 /* MainVC.swift */; };
+		121A926B2685B52B001DB097 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121A926A2685B52B001DB097 /* MyCollectionViewCell.swift */; };
 		12636D16268477B400A08D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12636D15268477B400A08D14 /* AppDelegate.swift */; };
 		12636D18268477B400A08D14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12636D17268477B400A08D14 /* SceneDelegate.swift */; };
 		12636D1A268477B400A08D14 /* MyTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12636D19268477B400A08D14 /* MyTableVC.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		121A92642685B261001DB097 /* MyCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionVC.swift; sourceTree = "<group>"; };
+		121A92672685B36F001DB097 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		121A926A2685B52B001DB097 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		12636D12268477B400A08D14 /* 0624_collectionview_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0624_collectionview_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12636D15268477B400A08D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12636D17268477B400A08D14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				12636D19268477B400A08D14 /* MyTableVC.swift */,
 				12636D2D26847BF800A08D14 /* MyTableViewCell.swift */,
 				12636D1B268477B400A08D14 /* Main.storyboard */,
+				121A926A2685B52B001DB097 /* MyCollectionViewCell.swift */,
+				121A92672685B36F001DB097 /* MainVC.swift */,
 				121A92642685B261001DB097 /* MyCollectionVC.swift */,
 				12636D2A2684785900A08D14 /* MyTableViewCell.xib */,
 				12636D1E268477B500A08D14 /* Assets.xcassets */,
@@ -148,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				12636D1A268477B400A08D14 /* MyTableVC.swift in Sources */,
+				121A926B2685B52B001DB097 /* MyCollectionViewCell.swift in Sources */,
+				121A92682685B36F001DB097 /* MainVC.swift in Sources */,
 				12636D2E26847BF800A08D14 /* MyTableViewCell.swift in Sources */,
 				121A92652685B261001DB097 /* MyCollectionVC.swift in Sources */,
 				12636D16268477B400A08D14 /* AppDelegate.swift in Sources */,

@@ -11,4 +11,8 @@ import UIKit
 class MyCollectionVC: UIViewController {
     
     //MARK: - Lifecycles
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("\(type(of: self)) - \(#function) called")
+    }
 }
